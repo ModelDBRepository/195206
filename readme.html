@@ -1,0 +1,28 @@
+<html>
+<p>This is the readme for the C++ computer code associated with the paper:
+</p>
+<p>Hutt et al. (2016) Dynamic Control of Synchronous Activity in Networks
+of Spiking Neurons PLOS ONE
+</p>
+<p>These files were contributed by Jeremie Lefebvre.
+</p>
+Example use:<br/>
+------------<p/>
+You can compile for example with g++ on a mac:<p/>
+g++ Periodic\ Forcing.cpp
+<p/>and the run with a command like<p/>
+./a.out
+<p/>
+After a short time data files are produced which you could graph for example in matlab:<p/>
+<pre>
+b=load('SS  -  PSD.txt');
+figure
+plot(b(:,1),b(:,2))
+hold on; plot(b(:,1),b(:,3))
+</pre>
+<p/>
+Which produces a figure<p/>
+<img src="./periodic_input_psd.png" alt="screenshot">
+<p/>similar to figure 1 D in the paper.
+
+</html>
